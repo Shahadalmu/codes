@@ -1,26 +1,26 @@
 function addOffice() {
-    var name = document.getElementById('Oname').value;
-    var floor = document.getElementById('Ofloor').value;
-    var office = document.getElementById('Onumber').value;
-    var omajor = document.getElementById('Omajor').value;
-    var A = document.getElementById('A').value;
-    var errorMessage = document.getElementById('error');
-   
-    if (name == "" || floor == "" || office == "" || omajor == "" || A == "") {
-      errorMessage.textContent = "الرجاء التحقق من تعبئة جميع الحقول";
-      errorMessage.style.display="block";
-    } else {
-      alert('تمت إضافة المكتب بنجاح');
-      window.location.href='index.php'
-    }
+  var name = document.getElementById('var-name').value;
+  var floor = document.getElementById('var-floor').value;
+  var office = document.getElementById('var-number').value;
+  var omajor = document.getElementById('var-major').value;
+  var round = document.getElementById('var-round').value;
+  var errorMessage = document.getElementById('error');
+
+  if (name == "" || floor == "" || office == "" || omajor == "" || A == "") {
+    errorMessage.textContent = "الرجاء التحقق من تعبئة جميع الحقول";
+    errorMessage.style.display = "block";
+  } else {
+    alert('تمت إضافة المكتب بنجاح');
+    window.location.href = 'index.css'
   }
-   
-  function cancel() {
-    // Clear the input fields
-    document.getElementById("Oname").value = "";
-    document.getElementById("Ofloor").value = "";
-    document.getElementById("Onumber").value = "";
-    document.getElementById("Omajor").value = "";
-    document.getElementById("A").value = "";
-    window.location.href='index.php'
-  }
+}
+
+function cancel() {
+  // Clear the input fields
+  document.getElementById("var-name").value = "";
+  document.getElementById("var-floor").value = "";
+  document.getElementById("var-number").value = "";
+  document.getElementById("var-major").value = "";
+  document.getElementById("var-round").value = "";
+  window.location.href = 'index.css'
+}
